@@ -1,0 +1,12 @@
+.trip {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 10px 30px 40px 30px;
+  row-gap: 10px;
+
+  &__map {
+    flex-grow: 1;
+  }
+}
