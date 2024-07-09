@@ -23,6 +23,10 @@
   const toast = useToast();
   const tripsList = ref([]);
 
+  onMounted(() => {
+    fetchTrips();
+  });
+
   const fetchTrips = async () => {
       try {
         const res = await getTripsService();
@@ -38,8 +42,4 @@
         });
       }
     }
-
-  onMounted(() => {
-    fetchTrips();
-  })
 </script>

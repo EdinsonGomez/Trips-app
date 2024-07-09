@@ -1,0 +1,40 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+
+  &__filters {
+    display: flex;
+    column-gap: 50px;
+
+    &-button.p-button {
+      padding: 10px 50px;
+      font-size: 14px;
+    }
+  }
+
+  &__bodyrow {
+    &:nth-child(even) {
+      background-color: #f5f5f5;
+    }
+  }
+
+  &__bodycell {
+    font-size: 15px;
+
+    div {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+    }
+  }
+
+  &__headercell {
+    font-size: 14px;
+  }
+
+  &__empty {
+    text-align: center;
+    color: #6b7280;
+  }
+}

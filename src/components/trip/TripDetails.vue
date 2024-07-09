@@ -38,7 +38,8 @@
       dataMarkers.push({
         lat: tripData.value.start.lat,
         lon: tripData.value.start.lon,
-        key: 'start'
+        key: 'start',
+        title: 'Inicio',
       });
     };
 
@@ -46,7 +47,8 @@
       dataMarkers.push({
         lat: tripData.value.end.lat,
         lon: tripData.value.end.lon,
-        key: 'end'
+        key: 'end',
+        title: 'Fin',
       });
     };
 

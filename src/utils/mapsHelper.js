@@ -32,7 +32,8 @@ export const loadMarkers = async (markersList = [], map) => {
         position: {
           lat: mark.lat,
           lng: mark.lon
-        }
+        },
+        title: mark.title ?? ''
       });
 
       const key = mark?.key ?? index;
